@@ -1,3 +1,5 @@
+LABEL org.opencontainers.image.source https://github.com/elAgala/departamentos_bot
+
 # Use the official Python image from the Docker Hub
 FROM python:3.10-slim
 
