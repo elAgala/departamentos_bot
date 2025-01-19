@@ -1,0 +1,14 @@
+services:
+  scraper:
+    build: .
+    container_name: argenprop_scrapper
+    environment:
+      - PYTHONUNBUFFERED=1
+    env_file:
+      - .env
+    volumes:
+      - sqlite_data:/db
+
+volumes:
+  sqlite_data:
+
