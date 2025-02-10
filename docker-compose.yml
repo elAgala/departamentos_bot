@@ -1,6 +1,8 @@
 services:
   scraper:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: argenprop_scrapper
     environment:
       - PYTHONUNBUFFERED=1
